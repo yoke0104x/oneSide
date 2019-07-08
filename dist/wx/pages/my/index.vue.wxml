@@ -1,0 +1,19 @@
+<template name="745f0437">
+  <view class="_div data-v-681c8edd wrap">
+    <view class="_header data-v-681c8edd">
+      <view class="_div data-v-681c8edd avatar">
+        <image src="{{img}}" lazy-load="false" class="_image data-v-681c8edd"></image>
+      </view>
+      <view class="_p data-v-681c8edd">{{formatPhonearr || formatPhone}}</view>
+    </view>
+    <view wx:if="{{formatPhonearr || formatPhone}}" class="_ul data-v-681c8edd">
+      <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_li data-v-681c8edd">
+        <icon type="waiting" size="18px" class="_icon data-v-681c8edd"></icon> <label class="_span data-v-681c8edd"> 我的面试 </label>
+        <image src="https://img-blog.csdnimg.cn/20190703142339376.png" class="_image data-v-681c8edd"></image>
+      </view> <button open-type="contact" class="_button data-v-681c8edd concat">
+        <icon type="info" size="18px" class="_icon data-v-681c8edd"></icon> <label class="_span data-v-681c8edd">客服中心</label>
+        <image src="https://img-blog.csdnimg.cn/20190703142339376.png" class="_image data-v-681c8edd"></image>
+      </button>
+    </view><button wx:else open-type="getPhoneNumber" bindgetphonenumber="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-681c8edd">获取手机号</button>
+  </view>
+</template>

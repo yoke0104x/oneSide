@@ -1,0 +1,11 @@
+<template name="eedacfc2">
+  <view class="_div data-v-4a48f41a wrapper"><map class="_map data-v-4a48f41a top" longitude="{{longitudes}}" latitude="{{latitudes}}" scale="14" circle="{{circle}}" subkey="X7RBZ-MMOKR-UQEWJ-WSCXC-IVXVK-IFFLL" show-location></map>
+    <cover-view class="_cover-view data-v-4a48f41a bottoms">
+      <cover-view class="_cover-view data-v-4a48f41a content-button">
+        <cover-view class="_cover-view data-v-4a48f41a span" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></cover-view>
+        <cover-view class="_cover-view data-v-4a48f41a span"></cover-view>
+      </cover-view>
+      <cover-view class="_cover-view data-v-4a48f41a all"><button bindtap="handleProxy" open-type="getUserInfo" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-4a48f41a">打卡</button></cover-view>
+    </cover-view>
+  </view>
+</template>

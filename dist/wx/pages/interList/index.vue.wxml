@@ -1,0 +1,18 @@
+<template name="a0f41bea">
+  <view class="_div data-v-784f645f box">
+    <view class="_div data-v-784f645f tops">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_p data-v-784f645f {{index === ind ? 'active' : null}}">{{item.stateNmae}}</view>
+    </view>
+    <view class="_div data-v-784f645f">
+      <view wx:if="{{interList.length}}" class="_ul data-v-784f645f alltops">
+        <view wx:key="item.id" key="{{item.id}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{interList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-784f645f">
+          <view class="_p data-v-784f645f"><label class="_span data-v-784f645f">{{item.company}}</label> <label class="_span data-v-784f645f {{'tag' + (item.status + 2)}}">{{item.status?item.status==1?'已放弃':'未开始':'已打卡'}}</label></view>
+          <view class="_p data-v-784f645f">{{item.address.address}}</view>
+          <view class="_p data-v-784f645f"><label class="_span data-v-784f645f">面试时间: {{item.start_time}}</label> <label class="_span data-v-784f645f {{'tag' + (2 - item.status)}}">{{item.remind?'未提醒':'已提醒'}}</label></view>
+        </view>
+      </view>
+      <view wx:else class="_p data-v-784f645f none">当前分类还没有面试!</view>
+    </view>
+    <view class="_p data-v-784f645f more" wx:if="{{interList.length}}">{{hasMore?'上拉加载更多': '我是有底线的'}}</view>
+  </view>
+</template>

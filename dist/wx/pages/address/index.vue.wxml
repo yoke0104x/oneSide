@@ -1,0 +1,17 @@
+<template name="0462a6a5">
+  <view class="_div data-v-51789eb9">
+    <view class="_div data-v-51789eb9 list">
+      <view class="_div data-v-51789eb9 title">
+        <picker bindchange="handleProxy" value="{{index}}" range="{{selector}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-51789eb9">
+          <view class="_view data-v-51789eb9 picker">
+            {{selector[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="_div data-v-51789eb9 inp"><input type="text" value="{{title}}" bindinput="handleProxy" placeholder="面试地址" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-51789eb9" /></view>
+    </view>
+    <view wx:key="i" key="{{i}}" wx:for="{{list}}" wx:for-index="i" wx:for-item="item" class="_div data-v-51789eb9">
+      <view class="_div data-v-51789eb9 lists" bindtap="handleProxy" data-eventid="{{'2_'+i}}" data-comkey="{{$k}}">{{item.address}}</view>
+    </view>
+  </view>
+</template>

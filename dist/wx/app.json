@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/homepage/main",
+    "pages/interview/main",
+    "pages/my/main",
+    "pages/address/main",
+    "pages/interList/main",
+    "pages/punch/main",
+    "pages/interList/detail/main"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一面而就",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap12.json"
+}

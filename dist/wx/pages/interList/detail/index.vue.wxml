@@ -1,0 +1,15 @@
+<template name="77300c44">
+  <view class="_div data-v-bb17c2d2 wrap">
+    <view class="_ul data-v-bb17c2d2">
+      <view class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">面试地址：</label> <label class="_span data-v-bb17c2d2">{{detailData.address.address}}</label></view>
+      <view class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">面试时间：</label> <label class="_span data-v-bb17c2d2">{{detailData.start_time}}</label></view>
+      <view class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">联系方式：</label> <label bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_span data-v-bb17c2d2">{{detailData.phone}}</label></view>
+      <view class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">是否提醒：</label> <label class="_span data-v-bb17c2d2">{{detailData.remind?'未提醒':'已提醒'}}</label></view>
+      <view class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">面试状态：</label> <label class="_span data-v-bb17c2d2">{{detailData.status==-1?'未开始':detailData.status==0?'已打卡': '已放弃'}}</label></view>
+      <view wx:if="{{detailData.status==-1}}" class="_li data-v-bb17c2d2"><label for class="_label data-v-bb17c2d2">取消提醒：</label>
+        <switch checked="{{detailData.remind===1}}" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_switch data-v-bb17c2d2" />
+      </view>
+    </view>
+    <view wx:if="{{detailData.status==-1 && title}}" class="_section data-v-bb17c2d2 action"><button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-bb17c2d2">去打卡</button> <button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-bb17c2d2">放弃面试</button></view>
+  </view>
+</template>

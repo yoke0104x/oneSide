@@ -1,0 +1,46 @@
+
+._ul {
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+}
+._li {
+  width: 720rpx;
+  min-height: 88rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+._li ._label {
+  color: #666;
+  width: 170rpx;
+  font-size: 30rpx;
+}
+._li ._span,
+._li switch {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+._li:last-child {
+  border-bottom: none;
+}
+.action {
+  display: flex;
+  margin: 50rpx 15rpx;
+}
+.action ._button {
+  flex: 1;
+  color: #fff;
+  margin: 15rpx;
+}
+.action ._button:first-child {
+  background: #197dbf;
+}
+.action ._button:last-child {
+  background: #dc4e42;
+}

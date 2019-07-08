@@ -1,0 +1,1 @@
+<import src="/pages/punch/index.vue.wxml" /><template is="eedacfc2" data="{{ ...$root['0'], $root }}"/>

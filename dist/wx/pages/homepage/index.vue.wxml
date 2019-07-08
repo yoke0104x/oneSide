@@ -1,0 +1,11 @@
+<template name="06caab8e">
+  <view class="_div data-v-e4e383c2 wrapper"><map class="_map data-v-e4e383c2 top" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" subkey="X7RBZ-MMOKR-UQEWJ-WSCXC-IVXVK-IFFLL" show-location></map>
+    <cover-view class="_cover-view data-v-e4e383c2 bottoms">
+      <cover-view class="_cover-view data-v-e4e383c2 content-button">
+        <cover-view class="_cover-view data-v-e4e383c2 span" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></cover-view>
+        <cover-view class="_cover-view data-v-e4e383c2 span" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></cover-view>
+      </cover-view>
+      <cover-view class="_cover-view data-v-e4e383c2 all"><button bindtap="handleProxy" open-type="getUserInfo" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-e4e383c2">添加面试</button></cover-view>
+    </cover-view>
+  </view>
+</template>
